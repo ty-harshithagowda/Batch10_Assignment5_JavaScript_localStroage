@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+
+
+    <a class="btn btn-custom col-md-5 ml-5" href="#" role="button" id="button">Login</a>
+    <a class="btn btn-custom1 col-md-5 ml-5" href="#" role="button" id="button1">Register</a>
+
+    <form name="myForm" onsubmit="return(validate());">
+    <div class="popup">
+        <div class="popup-content">
+
+            <h2>Login Form</h2>
+            Email id:
+            <input type="text" placeholder="emailid" name="Email" id="Email"><br><br>
+            password:
+            <input type="password" placeholder="password" name="Pwd" id="Pwd1"><br><br>
+            <!-- <a href="#" class="button" type="submit">Login</a> -->
+            <input type="submit" value="Login" class="button" id="login">
+            <!-- <a href="#" class="button" id="close">close</a> -->
+            <input type="button" value="close" id="close" class="button">
+        </div>
+    </div>
+    </form>
+    <form name="myForm1" onsubmit="return(validate1());">
+    <div class="popup1">
+        <div class="popup-content1">
+            <h2>Register Form</h2>
+            Name:
+            <input type="text" placeholder="name" name="Name" id="Name"><br><br>
+            Email id:
+            <input type="text" placeholder="emailid" name="Emailid" id="Emailid"><br><br>
+            Gender :
+            <input type="radio" id="male" name="gender" value="male" id="gender">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" id="gender">
+            <label for="female">Female</label><br>
+            password:
+            <input type="password" placeholder="password" name="Pwd" id="Pwd"><br><br>
+            Confirm Password:
+            <input type="password" placeholder="confirm password" name="CPwd"><br><br>
+
+            <!-- <a href="#" class="button">Register</a> -->
+            <input type="submit" value="Register" class="button" id="save">
+            <!-- <a href="#" class="button" id="close1">close</a> -->
+            <input type="button" value="close" id="close1" class="button">
+        </div>
+    </div>
+</form>
+
+    <script src="./open.js"></script>
+
+    <script src="/jquery-3.5.1.slim.min.js"></script>
+    <script src="./bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
